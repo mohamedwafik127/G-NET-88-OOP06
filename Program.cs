@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel;
+using System.Data;
 using System.Data.Common;
 using System.Reflection.Metadata;
 using System.Runtime.Intrinsics.X86;
+using static System.Net.WebRequestMethods;
 
 public class program
 {
@@ -77,6 +79,25 @@ public class program
         //b) "this" keyword.
         //c) It must be declared inside a static class.
         //d) No,An extension method cannot directly access the private members of the class it extends.
+
+        #endregion
+
+        #region Question_5
+
+        //Q5 Partial Classes and Partial Methods
+        //a) What is a Partial Class?
+        //b) Why would a developer split one class into multiple files?
+        //c) What is a Partial Method?
+        //d) What happens if a declared partial method has no implementation?
+
+        // Answer:
+        //a) Partial Class:
+        //A class that can be split into multiple files.The compiler combines them into one class.
+        //b) Why split a class?
+        //To organize code, make it easier to manage, or allow multiple developers to work on different parts.
+        //c) Partial Method:
+        //A method that is declared in one part of a partial class and can be implemented in another part.
+        //d) If a partial method has no implementation, it is removed by the compiler.
 
         #endregion
     }
