@@ -1,4 +1,7 @@
 ﻿using System.ComponentModel;
+using System.Data.Common;
+using System.Reflection.Metadata;
+using System.Runtime.Intrinsics.X86;
 
 public class program
 {
@@ -56,6 +59,24 @@ public class program
         //A constructor used to initialize static members.It runs once automatically, before the class is first used.
         //d) Static class:
         //A class that contains only static members and you cannot create an object from it.
+
+        #endregion
+
+        #region Question_4
+
+        //Q4 Extension Methods
+        //a) What is an Extension Method?
+        //b) What keyword must be used in the first parameter of an extension method?
+        //c) Where must an extension method be declared?
+        //d) Can an extension method access private members of the class it extends?
+
+        // Answer:
+
+        //a) Extension Method:
+        //A method that lets you add functionality to an existing class without modifying its source code.
+        //b) "this" keyword.
+        //c) It must be declared inside a static class.
+        //d) No,An extension method cannot directly access the private members of the class it extends.
 
         #endregion
     }
